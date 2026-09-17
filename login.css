@@ -120,3 +120,109 @@ main {
   border: 2px solid rgb(144, 224, 239);  
   box-shadow: 0 6px 15px rgba(3, 4, 94, 0.12);
 }
+/*
+   RIGHT COLUMN: LOGIN CAR */
+.login-card-container {
+  flex: 1 1 340px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 390px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 30px;
+  border-top: 4px solid rgb(0, 119, 182); 
+  box-shadow: 0 4px 15px rgba(3, 4, 94, 0.1);
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(3, 4, 94);
+  margin-bottom: 20px;
+}
+
+/* Form Groups & Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(3, 4, 94);
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 15px;
+  color: rgb(3, 4, 94);
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(144, 224, 239); 
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: rgb(0, 180, 216);         
+}
+
+/* Password Toggle Wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(0, 119, 182);
+  user-select: none;
+}
+
+/* Buttons */
+.btn-login-submit {
+  width: 100%;
+  padding: 11px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 182);     
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-login-submit:hover {
+  background-color: rgb(3, 4, 94);        
+}
+
+/* Form Footer Links */
+.form-footer {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.forgot-link {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 119, 182);
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+  color: rgb(3, 4, 94);
+}
