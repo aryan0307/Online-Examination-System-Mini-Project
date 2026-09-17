@@ -288,3 +288,52 @@ main {
   color: rgb(3, 4, 94);
   line-height: 1.4;
 }
+
+/*
+   FOOTER */
+.portal-footer {
+  background-color: rgb(3, 4, 94);        
+  color: rgb(255, 255, 255);
+  padding: 20px 5%;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer-copy {
+  color: rgb(202, 240, 248); 
+  text-align: center;
+  font-size: 14px;
+  margin: 0;            
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-link {
+  color: rgb(144, 224, 239);             
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.footer-separator {
+  color: rgb(0, 119, 182);                
+}
