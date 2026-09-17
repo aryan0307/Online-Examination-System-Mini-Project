@@ -31,6 +31,48 @@
         </div>
       </div>
 
+      
+      <div class="login-card-container">
+        <div class="login-card">
+          <h2 class="card-title">Login</h2>
+
+          <form action="dashboard.html" method="GET">
+            <div class="form-group">
+              <label for="rollNumber" class="form-label">Username / Roll Number</label>
+              <input 
+                type="text" 
+                id="rollNumber" 
+                name="rollNumber" 
+                class="form-input" 
+                placeholder="Enter your username or roll number" 
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <div class="password-wrapper">
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  class="form-input" 
+                  placeholder="Enter your password" 
+                  required
+                >
+                <span class="password-toggle">&#128065;</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-login-submit">Login</button>
+
+            <div class="form-footer">
+              <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
     </div>
   </main>
 
