@@ -2,52 +2,121 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+/* Main page structure  */
 body {
-  background-color: rgb(248, 250, 252);
-  color: rgb(30, 41, 59);
+  background-color: rgb(202, 240, 248);
+  color: rgb(3, 4, 94);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* 
+   HEADER / NAVBAR */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3.5rem;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(226, 232, 240);
+  padding: 18px 5%;
+  background-color: rgb(3, 4, 94);       
+  color: rgb(255, 255, 255);
+  gap: 15px;
 }
 
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 10px;
 }
 
 .logo-icon {
-  font-size: 1.4rem;
+  font-size: 26px;
 }
 
 .brand-text {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: rgb(15, 23, 42);
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 .btn-register {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 600;
-  color: rgb(37, 99, 235);
-  border: 1.5px solid rgb(37, 99, 235);
-  padding: 0.45rem 1.25rem;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(255, 255, 255);
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.2s ease;
 }
 
 .btn-register:hover {
-  background-color: rgb(37, 99, 235);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 4, 94);
+}
+
+/* Main Container */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+/* 
+   MAIN WORKSPACE 
+    */
+.login-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* Left Column: Welcome Text + Image */
+.welcome-container {
+  flex: 1 1 360px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.welcome-text-group {
+  margin-bottom: 15px;
+}
+
+.welcome-heading {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(3, 4, 94);                  
+  margin-bottom: 8px;
+}
+
+.welcome-subtext {
+  font-size: 16px;
+  color: rgb(0, 119, 182);               
+  line-height: 1.4;
+}
+
+/* Illustration Image */
+.welcome-illustration {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 10px;
+}
+
+.exam-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid rgb(144, 224, 239);  
+  box-shadow: 0 6px 15px rgba(3, 4, 94, 0.12);
 }
