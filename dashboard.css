@@ -1,5 +1,5 @@
 /* =========================================================
-   ONLINE EXAMINATION — STUDENT DASHBOARD (SIMPLIFIED)
+   EXAMSPHERE — STUDENT DASHBOARD (SIMPLIFIED)
    Color Palette:
    #03045e  Deep Twilight   (dark navy - header, headings)
    #0077b6  Bright Teal Blue (primary brand color)
@@ -158,6 +158,28 @@ body {
 
     background: rgba(255, 255, 255, 0.07);
     border-radius: var(--radius-full);
+}
+.profile-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-btn {
+    padding: 8px 14px;
+    color: white;
+    background: transparent;
+    border: 1px solid #90e0ef;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #0077b6;
+    border-color: #0077b6;
 }
 
 .avatar {
@@ -460,6 +482,7 @@ main {
 
 .btn {
     display: inline-flex;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -693,4 +716,10 @@ button:focus-visible {
         align-items: flex-start;
         gap: 8px;
     }
+}
+
+/* Keep section headings visible below the sticky header when jumping via nav links */
+.available-exams,
+.past-results {
+    scroll-margin-top: 90px;
 }
