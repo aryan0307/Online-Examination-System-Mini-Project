@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Examination Portal - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="brand-text">Online Examination Portal</span>
+    </div>
+    <a href="./register.html" class="btn-register">Register</a>
+  </header>
+
+  <main>
+    <div class="login-layout">
+
+      <div class="welcome-container">
+        <div class="welcome-text-group">
+          <h1 class="welcome-heading">Welcome Back!</h1>
+          <p class="welcome-subtext">Login to your account to start your examination.</p>
+        </div>
+        <div class="welcome-illustration">
+          <img src="phto.png" alt="Online Examination Illustration" class="exam-img">
+        </div>
+      </div>
+
+      <div class="login-card-container">
+        <div class="login-card">
+          <h2 class="card-title">Login</h2>
+
+          <form action="dashboard.html" method="GET">
+            <div class="form-group">
+              <label for="rollNumber" class="form-label">Username / Roll Number</label>
+              <input 
+                type="text" 
+                id="rollNumber" 
+                name="rollNumber" 
+                class="form-input" 
+                placeholder="Enter your username or roll number" 
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <div class="password-wrapper">
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  class="form-input" 
+                  placeholder="Enter your password" 
+                  required
+                >
+                <span class="password-toggle">&#128065;</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-login-submit">Login</button>
+
+            <div class="form-footer">
+              <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HOW IT WORKS / WORKFLOW SECTION -->
+    <div class="workflow-container">
+      <h3 class="workflow-heading">How It Works</h3>
+      <div class="steps-row">
+
+        <div class="step-card">
+          <div class="step-circle">1</div>
+          <h4 class="step-title">Login</h4>
+          <p class="step-desc">Enter your credentials to access the examination portal.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-circle">2</div>
+          <h4 class="step-title">Select Exam</h4>
+          <p class="step-desc">Choose from the list of available active exams.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-circle">3</div>
+          <h4 class="step-title">Take Test</h4>
+          <p class="step-desc">Answer questions within the assigned time limit.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-circle">4</div>
+          <h4 class="step-title">Get Results</h4>
+          <p class="step-desc">View your score and detailed performance instantly.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="portal-footer">
+    <p class="footer-copy">&copy; 2026 Online Examination Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
