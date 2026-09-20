@@ -391,3 +391,56 @@ body {
     }
 }
 
+
+/* ---------- Top bar: brand + back link ---------- */
+.page-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.page-brand {
+    color: #03045E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #0077B6;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Keep the meta boxes readable when the subject name is long */
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.meta-item .meta-value {
+    white-space: nowrap;
+}
+
+@media (max-width: 1150px) {
+    .exam-meta {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1150px) {
+    .exam-meta {
+        justify-content: flex-end;
+    }
+}
+
+/* Start Exam is now a real link (was a <button> nested in an <a>) */
+a.btn-start {
+    display: inline-block;
+    text-decoration: none;
+}
