@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+
+                <span>ExamSphere</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Exams</a>
+                <a href="#" class="nav-link">Results</a>
+            </nav>
+
+            <!-- Student -->
+            <div class="student-profile">
+                <div class="avatar">U</div>
+                <div name="User name">User</div>
+
+                <div class="profile-details">
+                    <strong>User</strong>
+                    <small>Student ID: #2026-CS</small>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Welcome -->
+        <section class="welcome">
+
+            <div class="welcome-content">
+
+                <span class="badge">
+                    Session 2026 • Academic Portal
+                </span>
+
+                <h1>Welcome back, User!</h1>
+
+                <p>
+                    View your upcoming examinations, track deadlines,
+                    and check your previous performance.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= QUICK STATS ================= -->
+
+        <section class="quick-stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+
+                <div>
+                    <span class="stat-label">Available Exams</span>
+                    <strong class="stat-value">3</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">✓</div>
+
+                <div>
+                    <span class="stat-label">Completed Tests</span>
+                    <strong class="stat-value">2</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">★</div>
+
+                <div>
+                    <span class="stat-label">Average Score</span>
+                    <strong class="stat-value">80%</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+
+                <div>
+                    <span class="stat-label">Next Due</span>
+                    <strong class="stat-value">20 Sep</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= AVAILABLE EXAMS ================= -->
+
+        <section class="available-exams">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Available Exams</h2>
+
+                    <p class="section-subtitle">
+                        Exams ready for you to take.
+                    </p>
+                </div>
+
+                <span class="count-badge">
+                    3 Scheduled
+                </span>
+
+            </div>
+
+
+            <div class="exam-container">
+
+
+                <!-- EXAM 1 -->
+
+                <div class="exam-card">
+
+                    <div class="card-top">
+                        <span class="subject-pill">
+                            Database Systems
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+                    </div>
+
+                    <h3>
+                        Database Management System
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            21 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                    </div>
+                    <a href="instructions.html">
+                        <button class="btn btn-primary">
+                        Start Exam →
+                    </button>
+                    </a>
+                    
+
+                </div>
+
+
+                <!-- EXAM 2 -->
+
+                <div class="exam-card">
+
+                    <div class="card-top">
+
+                        <span class="subject-pill">
+                            Systems Architecture
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Operating Systems
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            22 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                    </div>
+                    <a href="instructions.html">
+                        <button class="btn btn-primary">
+                        Start Exam →
+                        </button>
+                    </a>
+                    
+
+                </div>
+
+
+                <!-- EXAM 3 -->
+
+                <div class="exam-card">
+
+                    <div class="card-top">
+
+                        <span class="subject-pill">
+                            Networking
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Computer Networks
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            25 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                    </div>
+
+                    <a href="instructions.html">
+                        <button class="btn btn-primary">
+                        Start Exam →
+                        </button>
+                    </a>    
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PAST RESULTS ================= -->
+
+        <section class="past-results">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Past Results</h2>
+
+                    <p class="section-subtitle">
+                        View your previous examination performance.
+                    </p>
+                </div>
+
+                <span class="count-badge">
+                    2 Completed
+                </span>
+
+            </div>
+
+
+            <div class="result-container">
+
+
+                <!-- RESULT 1 -->
+
+                <div class="result-card">
+
+                    <div class="result-main">
+
+                        <div class="result-icon-badge">
+                            ✓
+                        </div>
+
+                        <div class="result-info">
+
+                            <h3>
+                                Database Management System
+                            </h3>
+
+                            <p class="attempt-date">
+                                Attempted on 10 September 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-progress-group">
+
+                        <div class="result-score-line">
+
+                            <span>
+                                <strong>42</strong> / 50
+                            </span>
+
+                            <span class="status-pill status-passed">
+                                84% • Passed
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar-track">
+
+                            <div class="progress-bar-fill" style="width: 84%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-secondary">
+                        View Result
+                    </button>
+
+                </div>
+
+
+                <!-- RESULT 2 -->
+
+                <div class="result-card">
+
+                    <div class="result-main">
+
+                        <div class="result-icon-badge">
+                            ✓
+                        </div>
+
+                        <div class="result-info">
+
+                            <h3>
+                                Computer Networks
+                            </h3>
+
+                            <p class="attempt-date">
+                                Attempted on 5 September 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-progress-group">
+
+                        <div class="result-score-line">
+
+                            <span>
+                                <strong>38</strong> / 50
+                            </span>
+
+                            <span class="status-pill status-passed">
+                                76% • Passed
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar-track">
+
+                            <div class="progress-bar-fill" style="width: 76%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-secondary">
+                        View Result
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
