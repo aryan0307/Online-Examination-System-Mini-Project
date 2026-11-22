@@ -51,4 +51,26 @@ loginForm.addEventListener('submit', function (e) {
   } else {
     setError(passwordInput, '');
   }
+
+  
+  if (isValid) {
+    const users = JSON.parse(localStorage.getItem('portalUsers')) || [];
+    
+    
+    const foundUser = users.find(user => user.rollNumber === rollVal);
+
+    if (!foundUser) {
+      setError(rollInput, 'Account not found. Please Register first.');
+    } else if (foundUser.password !== passVal) {
+      setError(passwordInput, 'Incorrect password. Please try again.');
+    } else {
+     
+      localStorage.setItem('currentUser', JSON.stringify(foundUser));
+      window.location.href = 'dashboard.html';
+    }
+  }
 });
+
+
+rollInput.addEventListener('input', () => setError(rollInput, ''));
+passwordInput.addEventListener('input', () => setError(passwordInput, ''));
