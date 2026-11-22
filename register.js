@@ -17,4 +17,10 @@ registerForm.addEventListener('submit', function (e) {
     alert('This Roll Number is already registered! Please Login.');
     return;
   }
+
+  users.push({ name, rollNumber, password });
+  localStorage.setItem('portalUsers', JSON.stringify(users));
+
+  
+  window.location.href = 'login.html';
 });
