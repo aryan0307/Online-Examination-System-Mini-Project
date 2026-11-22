@@ -1,8 +1,3 @@
-// ============================================
-// ExamSphere - dashboard.js
-// Runs after the page has finished loading
-// ============================================
-
 document.addEventListener("DOMContentLoaded", function () {
     showGreeting();
     showCountdowns();
@@ -18,11 +13,11 @@ function showGreeting() {
     var message;
 
     if (hour < 12) {
-        message = "Good morning";
+        message = "Good Morning";
     } else if (hour < 18) {
-        message = "Good afternoon";
+        message = "Good Afternoon";
     } else {
-        message = "Good evening";
+        message = "Good Evening";
     }
 
     greetingElement.textContent = message;
