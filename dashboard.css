@@ -694,3 +694,25 @@ button:focus-visible {
         gap: 8px;
     }
 }
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;      /* replace with your border variable */
+    border-radius: 8px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4f46e5;       /* replace with your primary color variable */
+}
+
+.countdown {
+    font-weight: 600;
+}
+
+.countdown-passed {
+    color: #b91c1c;              /* replace with a red/danger variable if you have one */
+}

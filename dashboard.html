@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Dashboard</title>
+    <title>ExamSphere - Student Dashboard</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="dashboard.css">
@@ -27,21 +27,27 @@
 
             <!-- Navigation -->
             <nav class="navigation">
-                <a href="#" class="nav-link active">Dashboard</a>
-                <a href="#" class="nav-link">Exams</a>
-                <a href="#" class="nav-link">Results</a>
+                <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="#available-exams" class="nav-link">Exams</a>
+                <a href="#past-results" class="nav-link">Results</a>
             </nav>
 
             <!-- Student -->
-            <div class="student-profile">
-                <div class="avatar">U</div>
-                <div name="User name">User</div>
+        <!-- Student Profile + Logout -->
+            <div class="profile-area">
 
-                <div class="profile-details">
-                    <strong>User</strong>
-                    <small>Student ID: #2026-CS</small>
+                <div class="student-profile">
+                    <div class="avatar">U</div>
+
+                    <div class="profile-details">
+                        <strong>User</strong>
+                        <small>Student ID: #2026-CS</small>
+                    </div>
                 </div>
-            </div>
+
+            <a href="index.html" class="logout-btn">Logout</a>
+
+        </div>
 
         </div>
 
@@ -61,7 +67,8 @@
                     Session 2026 • Academic Portal
                 </span>
 
-                <h1>Welcome back, User!</h1>
+                <!-- CHANGED: greeting is now filled in by dashboard.js -->
+                <h1><span id="greeting">Welcome back</span>, User!</h1>
 
                 <p>
                     View your upcoming examinations, track deadlines,
@@ -122,7 +129,7 @@
 
         <!-- ================= AVAILABLE EXAMS ================= -->
 
-        <section class="available-exams">
+        <section class="available-exams" id="available-exams">
 
             <div class="section-header">
 
@@ -140,13 +147,19 @@
 
             </div>
 
+            <!-- ADDED: Search box -->
+            <input type="text" id="exam-search" class="search-input"
+                   placeholder="Search exams by name or subject...">
+            <p id="no-results" class="section-subtitle" hidden>No exams found.</p>
+
 
             <div class="exam-container">
 
 
                 <!-- EXAM 1 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-09-21">
 
                     <div class="card-top">
                         <span class="subject-pill">
@@ -179,18 +192,20 @@
                             30 MCQs
                         </p>
 
-                    </div>
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
 
-                    <button class="btn btn-primary">
-                        Start Exam →
-                    </button>
+                    </div>
+                    <a href="DBMS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    
 
                 </div>
 
 
                 <!-- EXAM 2 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-09-22">
 
                     <div class="card-top">
 
@@ -225,18 +240,20 @@
                             30 MCQs
                         </p>
 
-                    </div>
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
 
-                    <button class="btn btn-primary">
-                        Start Exam →
-                    </button>
+                    </div>
+                    <a href="OS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    
 
                 </div>
 
 
                 <!-- EXAM 3 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-09-25">
 
                     <div class="card-top">
 
@@ -271,11 +288,12 @@
                             30 MCQs
                         </p>
 
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
                     </div>
 
-                    <button class="btn btn-primary">
-                        Start Exam →
-                    </button>
+                    <a href="CN_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>    
 
                 </div>
 
@@ -286,7 +304,7 @@
 
         <!-- ================= PAST RESULTS ================= -->
 
-        <section class="past-results">
+        <section class="past-results" id="past-results">
 
             <div class="section-header">
 
@@ -338,18 +356,18 @@
                         <div class="result-score-line">
 
                             <span>
-                                <strong>42</strong> / 50
+                                <strong>25</strong> / 30
                             </span>
 
                             <span class="status-pill status-passed">
-                                84% • Passed
+                                83% • Passed
                             </span>
 
                         </div>
 
                         <div class="progress-bar-track">
 
-                            <div class="progress-bar-fill" style="width: 84%;">
+                            <div class="progress-bar-fill" style="width: 83%;">
                             </div>
 
                         </div>
@@ -357,9 +375,7 @@
                     </div>
 
 
-                    <button class="btn btn-secondary">
-                        View Result
-                    </button>
+                    <a href="DBMS_Exam_HTML_CSS/result.html" class="btn btn-secondary">View Result</a>
 
                 </div>
 
@@ -394,18 +410,18 @@
                         <div class="result-score-line">
 
                             <span>
-                                <strong>38</strong> / 50
+                                <strong>23</strong> / 30
                             </span>
 
                             <span class="status-pill status-passed">
-                                76% • Passed
+                                77% • Passed
                             </span>
 
                         </div>
 
                         <div class="progress-bar-track">
 
-                            <div class="progress-bar-fill" style="width: 76%;">
+                            <div class="progress-bar-fill" style="width: 77%;">
                             </div>
 
                         </div>
@@ -413,9 +429,7 @@
                     </div>
 
 
-                    <button class="btn btn-secondary">
-                        View Result
-                    </button>
+                    <a href="CN_Exam_HTML_CSS/result.html" class="btn btn-secondary">View Result</a>
 
                 </div>
 
@@ -424,6 +438,9 @@
         </section>
 
     </main>
+
+    <!-- ADDED: JavaScript file -->
+    <script src="dashboard.js"></script>
 
 </body>
 
