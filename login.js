@@ -25,3 +25,30 @@ function setError(inputElement, message) {
   errorEl.textContent = message;
   inputElement.style.borderColor = message ? '#e63946' : '';
 }
+
+
+loginForm.setAttribute('novalidate', true);
+loginForm.addEventListener('submit', function (e) {
+  e.preventDefault(); 
+  let isValid = true;
+
+  const rollVal = rollInput.value.trim();
+  const passVal = passwordInput.value.trim();
+
+  if (rollVal === '') {
+    setError(rollInput, 'Please enter your Username or Roll Number.');
+    isValid = false;
+  } else {
+    setError(rollInput, '');
+  }
+
+  if (passVal === '') {
+    setError(passwordInput, 'Please enter your password.');
+    isValid = false;
+  } else if (passVal.length < 6) {
+    setError(passwordInput, 'Password must be at least 6 characters.');
+    isValid = false;
+  } else {
+    setError(passwordInput, '');
+  }
+});
