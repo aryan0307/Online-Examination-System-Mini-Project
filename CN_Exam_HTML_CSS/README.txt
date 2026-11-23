@@ -1,16 +1,13 @@
-COMPUTER NETWORKS ONLINE EXAM - HTML + CSS ONLY
+COMPUTER NETWORKS ONLINE EXAM - SINGLE PAGE (HTML + CSS + JAVASCRIPT)
 
 Files:
-- exam1.html through exam30.html = 30-question Computer Networks exam
-- style.css = common design
-- result.html = simple submission page
+- index.html    = the only page. Open this in a browser.
+- style.css     = common design (unchanged)
+- questions.js  = all 30 questions, options and the correct answer of each
+- exam.js       = JavaScript that switches questions on the same page
 
-How to use:
-1. Open exam1.html in a browser.
-2. Use Next/Previous or the question numbers to navigate.
-3. Each page uses only HTML and CSS. No JavaScript is required.
-
-Important:
-Because this project uses only HTML and CSS, the radio-button answers are visual only.
-There is no automatic scoring, timer countdown, or answer saving.
-Those features normally require JavaScript or a backend.
+How it works:
+1. exam.js reads questions.js and draws the question, options and navigator.
+2. Next / Previous / question numbers change the question with JavaScript (no anchor tags, no extra pages).
+3. The selected answer is saved in the browser (localStorage) and restored when you return to a question.
+4. Submit Exam shows the result view with the score.
