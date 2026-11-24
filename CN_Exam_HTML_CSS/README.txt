@@ -1,19 +1,13 @@
-EXAMSPHERE - COMPUTER NETWORKS ONLINE EXAM - HTML + CSS ONLY
+COMPUTER NETWORKS ONLINE EXAM - SINGLE PAGE (HTML + CSS + JAVASCRIPT)
 
 Files:
-- instructions.html = exam instructions page (opened from the dashboard, "Start Exam" leads to exam1.html)
-- exam1.html through exam30.html = 30-question Computer Networks exam
-- result.html = result page shown after "Submit Exam" on question 30
-- style.css = common design for the exam pages
-(The dashboard, login and shared instructions/result styles live in the project root.)
+- index.html    = the only page. Open this in a browser.
+- style.css     = common design (unchanged)
+- questions.js  = all 30 questions, options and the correct answer of each
+- exam.js       = JavaScript that switches questions on the same page
 
-How to use:
-1. Open index.html in the project root (login) and go to the dashboard, or open dashboard.html directly.
-2. Click "Start Exam" on the Computer Networks card. Read the instructions, then start the exam.
-3. Use Next/Previous or the question numbers to navigate.
-4. Each page uses only HTML and CSS. No JavaScript is required.
-
-Important:
-Because this project uses only HTML and CSS, the radio-button answers are visual only.
-There is no automatic scoring, timer countdown, or answer saving, so the result page shows sample data.
-Those features normally require JavaScript or a backend.
+How it works:
+1. exam.js reads questions.js and draws the question, options and navigator.
+2. Next / Previous / question numbers change the question with JavaScript (no anchor tags, no extra pages).
+3. The selected answer is saved in the browser (localStorage) and restored when you return to a question.
+4. Submit Exam shows the result view with the score.
