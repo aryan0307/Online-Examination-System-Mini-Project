@@ -1,5 +1,5 @@
 /* =========================================================
-   EXAMSPHERE — STUDENT DASHBOARD (SIMPLIFIED)
+   ONLINE EXAMINATION — STUDENT DASHBOARD (SIMPLIFIED)
    Color Palette:
    #03045e  Deep Twilight   (dark navy - header, headings)
    #0077b6  Bright Teal Blue (primary brand color)
@@ -158,28 +158,6 @@ body {
 
     background: rgba(255, 255, 255, 0.07);
     border-radius: var(--radius-full);
-}
-.profile-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logout-btn {
-    padding: 8px 14px;
-    color: white;
-    background: transparent;
-    border: 1px solid #90e0ef;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    transition: 0.2s ease;
-}
-
-.logout-btn:hover {
-    background: #0077b6;
-    border-color: #0077b6;
 }
 
 .avatar {
@@ -482,7 +460,6 @@ main {
 
 .btn {
     display: inline-flex;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -506,7 +483,6 @@ main {
     background: var(--bright-teal-blue);
     border: none;
 }
-
 .btn-primary:hover {
     background: #00669d;
 }
@@ -717,9 +693,25 @@ button:focus-visible {
         gap: 8px;
     }
 }
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;      /* replace with your border variable */
+    border-radius: 8px;
+}
 
-/* Keep section headings visible below the sticky header when jumping via nav links */
-.available-exams,
-.past-results {
-    scroll-margin-top: 90px;
+.search-input:focus {
+    outline: none;
+    border-color: #4f46e5;       /* replace with your primary color variable */
+}
+
+.countdown {
+    font-weight: 600;
+}
+
+.countdown-passed {
+    color: #b91c1c;              /* replace with a red/danger variable if you have one */
 }

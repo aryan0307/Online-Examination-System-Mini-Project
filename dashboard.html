@@ -67,7 +67,8 @@
                     Session 2026 • Academic Portal
                 </span>
 
-                <h1>Welcome back, User!</h1>
+                <!-- CHANGED: greeting is now filled in by dashboard.js -->
+                <h1><span id="greeting">Welcome back</span>, User!</h1>
 
                 <p>
                     View your upcoming examinations, track deadlines,
@@ -146,13 +147,19 @@
 
             </div>
 
+            <!-- ADDED: Search box -->
+            <input type="text" id="exam-search" class="search-input"
+                   placeholder="Search exams by name or subject...">
+            <p id="no-results" class="section-subtitle" hidden>No exams found.</p>
+
 
             <div class="exam-container">
 
 
                 <!-- EXAM 1 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-12-21">
 
                     <div class="card-top">
                         <span class="subject-pill">
@@ -185,8 +192,11 @@
                             30 MCQs
                         </p>
 
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
                     </div>
-<a href="DBMS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    <a href="DBMS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
                     
 
                 </div>
@@ -194,7 +204,8 @@
 
                 <!-- EXAM 2 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-09-22">
 
                     <div class="card-top">
 
@@ -229,15 +240,20 @@
                             30 MCQs
                         </p>
 
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
                     </div>
-<a href="OS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>           
+                    <a href="OS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    
 
                 </div>
 
 
                 <!-- EXAM 3 -->
 
-                <div class="exam-card">
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-12-25">
 
                     <div class="card-top">
 
@@ -272,9 +288,12 @@
                             30 MCQs
                         </p>
 
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
                     </div>
 
-<a href="CN_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    <a href="CN_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>    
 
                 </div>
 
@@ -419,6 +438,9 @@
         </section>
 
     </main>
+
+    <!-- ADDED: JavaScript file -->
+    <script src="dashboard.js"></script>
 
 </body>
 
