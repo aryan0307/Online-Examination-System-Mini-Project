@@ -337,3 +337,27 @@ main {
 .footer-separator {
   color: rgb(0, 119, 182);                
 }
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+
+.js-error {
+  color: #e63946;
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+
+.form-input.input-error {
+  border: 1.5px solid #e63946 !important;
+  background-color: #fff5f5;
+}
