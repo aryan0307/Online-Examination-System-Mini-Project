@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamSphere - Student Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+
+                <span>ExamSphere</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+                <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="#available-exams" class="nav-link">Exams</a>
+                <a href="#past-results" class="nav-link">Results</a>
+            </nav>
+
+            <!-- Student -->
+        <!-- Student Profile + Logout -->
+            <div class="profile-area">
+
+                <div class="student-profile">
+                    <div class="avatar">U</div>
+
+                    <div class="profile-details">
+                        <strong>User</strong>
+                        <small>Student ID: #2026-CS</small>
+                    </div>
+                </div>
+
+            <a href="index.html" class="logout-btn">Logout</a>
+
+        </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Welcome -->
+        <section class="welcome">
+
+            <div class="welcome-content">
+
+                <span class="badge">
+                    Session 2026 • Academic Portal
+                </span>
+
+                <!-- CHANGED: greeting is now filled in by dashboard.js -->
+                <h1><span id="greeting">Welcome back</span>, User!</h1>
+
+                <p>
+                    View your upcoming examinations, track deadlines,
+                    and check your previous performance.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= QUICK STATS ================= -->
+
+        <section class="quick-stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+
+                <div>
+                    <span class="stat-label">Available Exams</span>
+                    <strong class="stat-value">3</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">✓</div>
+
+                <div>
+                    <span class="stat-label">Completed Tests</span>
+                    <strong class="stat-value">2</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">★</div>
+
+                <div>
+                    <span class="stat-label">Average Score</span>
+                    <strong class="stat-value">80%</strong>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+
+                <div>
+                    <span class="stat-label">Next Due</span>
+                    <strong class="stat-value">20 Sep</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= AVAILABLE EXAMS ================= -->
+
+        <section class="available-exams" id="available-exams">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Available Exams</h2>
+
+                    <p class="section-subtitle">
+                        Exams ready for you to take.
+                    </p>
+                </div>
+
+                <span class="count-badge">
+                    3 Scheduled
+                </span>
+
+            </div>
+
+            <!-- ADDED: Search box -->
+            <input type="text" id="exam-search" class="search-input"
+                   placeholder="Search exams by name or subject...">
+            <p id="no-results" class="section-subtitle" hidden>No exams found.</p>
+
+
+            <div class="exam-container">
+
+
+                <!-- EXAM 1 -->
+
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-12-21">
+
+                    <div class="card-top">
+                        <span class="subject-pill">
+                            Database Systems
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+                    </div>
+
+                    <h3>
+                        Database Management System
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            21 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
+                    </div>
+                    <a href="DBMS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    
+
+                </div>
+
+
+                <!-- EXAM 2 -->
+
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-09-22">
+
+                    <div class="card-top">
+
+                        <span class="subject-pill">
+                            Systems Architecture
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Operating Systems
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            22 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
+                    </div>
+                    <a href="OS_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>
+                    
+
+                </div>
+
+
+                <!-- EXAM 3 -->
+
+                <!-- CHANGED: added data-date -->
+                <div class="exam-card" data-date="2026-12-25">
+
+                    <div class="card-top">
+
+                        <span class="subject-pill">
+                            Networking
+                        </span>
+
+                        <span class="status-pill status-ready">
+                            Ready
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Computer Networks
+                    </h3>
+
+                    <div class="card-meta">
+
+                        <p>
+                            📅 <strong>Date:</strong>
+                            25 September 2026
+                        </p>
+
+                        <p>
+                            ⏱ <strong>Duration:</strong>
+                            30 Minutes
+                        </p>
+
+                        <p>
+                            📝 <strong>Questions:</strong>
+                            30 MCQs
+                        </p>
+
+                        <!-- ADDED: countdown (filled in by dashboard.js) -->
+                        <p class="countdown"></p>
+
+                    </div>
+
+                    <a href="CN_Exam_HTML_CSS/instructions.html" class="btn btn-primary">Start Exam →</a>    
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PAST RESULTS ================= -->
+
+        <section class="past-results" id="past-results">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Past Results</h2>
+
+                    <p class="section-subtitle">
+                        View your previous examination performance.
+                    </p>
+                </div>
+
+                <span class="count-badge">
+                    2 Completed
+                </span>
+
+            </div>
+
+
+            <div class="result-container">
+
+
+                <!-- RESULT 1 -->
+
+                <div class="result-card">
+
+                    <div class="result-main">
+
+                        <div class="result-icon-badge">
+                            ✓
+                        </div>
+
+                        <div class="result-info">
+
+                            <h3>
+                                Database Management System
+                            </h3>
+
+                            <p class="attempt-date">
+                                Attempted on 10 September 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-progress-group">
+
+                        <div class="result-score-line">
+
+                            <span>
+                                <strong>25</strong> / 30
+                            </span>
+
+                            <span class="status-pill status-passed">
+                                83% • Passed
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar-track">
+
+                            <div class="progress-bar-fill" style="width: 83%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="DBMS_Exam_HTML_CSS/result.html" class="btn btn-secondary">View Result</a>
+
+                </div>
+
+
+                <!-- RESULT 2 -->
+
+                <div class="result-card">
+
+                    <div class="result-main">
+
+                        <div class="result-icon-badge">
+                            ✓
+                        </div>
+
+                        <div class="result-info">
+
+                            <h3>
+                                Computer Networks
+                            </h3>
+
+                            <p class="attempt-date">
+                                Attempted on 5 September 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-progress-group">
+
+                        <div class="result-score-line">
+
+                            <span>
+                                <strong>23</strong> / 30
+                            </span>
+
+                            <span class="status-pill status-passed">
+                                77% • Passed
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar-track">
+
+                            <div class="progress-bar-fill" style="width: 77%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="CN_Exam_HTML_CSS/result.html" class="btn btn-secondary">View Result</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ADDED: JavaScript file -->
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
