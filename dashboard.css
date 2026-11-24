@@ -483,7 +483,6 @@ main {
     background: var(--bright-teal-blue);
     border: none;
 }
-
 .btn-primary:hover {
     background: #00669d;
 }
