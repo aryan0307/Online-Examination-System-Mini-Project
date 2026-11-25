@@ -139,7 +139,7 @@ var Exam = (function () {
     });
 
     var result = {
-        studentName: localStorage.getItem("studentName") || "Student",
+        studentName: JSON.parse(localStorage.getItem("currentUser") || "{}").name || "Student",
         examName: data.resultName,
         score: correct,
         totalMarks: TOTAL,
