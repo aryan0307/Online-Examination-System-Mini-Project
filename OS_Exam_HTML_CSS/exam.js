@@ -122,11 +122,39 @@ var Exam = (function () {
     }
 
     function submitExam() {
-        app.innerHTML = resultViewHTML();
-        document.title = "Exam Submitted";
-        window.scrollTo(0, 0);
-    }
+    var correct = 0;
+    var wrong = 0;
+    var skipped = 0;
 
+    questions.forEach(function (q, i) {
+        var given = answers[i + 1];
+
+        if (!given) {
+            skipped++;
+        } else if (given === q.answer) {
+            correct++;
+        } else {
+            wrong++;
+        }
+    });
+
+    var result = {
+        studentName: localStorage.getItem("studentName") || "Student",
+        examName: data.resultName,
+        score: correct,
+        totalMarks: TOTAL,
+        correct: correct,
+        wrong: wrong,
+        skipped: skipped,
+        date: new Date().toLocaleDateString(),
+        duration: data.minutes,
+        timeTaken: "Not recorded"
+    };
+
+    localStorage.setItem("examResult", JSON.stringify(result));
+
+    window.location.href = "result.html";
+}
     /* ---------- events (delegated, so they survive re-rendering) ---------- */
     function activate(el) {
         if (el.hasAttribute("data-goto")) {
